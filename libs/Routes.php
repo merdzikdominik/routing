@@ -1,10 +1,10 @@
 <?php
 
 class Routes {
-    private string $request;
-    private array $params;
-    private string $controller;
-    private object $controllerObject;
+    private string $request; //string
+    private array $params; // array
+    private string $controller; //string
+    private object $controllerObject; //object
 
     public function __construct() {
 
