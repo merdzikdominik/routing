@@ -13,3 +13,8 @@ body
     padding: 12px;
     font-family: 'Roboto', sans-serif;
 }
+
+.make-space
+{
+    margin-right: 10px;
+}
