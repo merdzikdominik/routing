@@ -15,21 +15,17 @@ class Main extends Controller {
         if (isset($params[1])) $action = $params[1];
 
         $this->$viewCarousel();
-        $this->$viewOfferBar("Zobacz naszą oferte!");
+        $this->$viewOfferBar();
 
 //        echo __DIR__;
     }
 
-//    protected function greetUser(): void {
-//        $this->view->renderGreetUser();
-//    }
-
     protected function viewCarousel(): void {
-        $this->view->renderCarousel();
+        $this->view->viewPage("carousel_view");
     }
 
-    protected function viewOfferBar($text): void {
-        $this->view->renderOfferBar($text);
+    protected function viewOfferBar(): void {
+        $this->view->viewPage("offer_bar_view");
     }
 
 }

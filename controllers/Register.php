@@ -20,8 +20,7 @@ class Register extends Controller
     }
 
     protected function viewRegistrationForm(): void {
-        $this->view->renderRegistrationForm();
-//        require_once "views/register_view.php";
+        $this->view->viewPage("register_view");
     }
 
     protected function noPage(): void {
